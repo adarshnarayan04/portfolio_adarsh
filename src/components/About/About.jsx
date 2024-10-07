@@ -4,8 +4,8 @@ import { getImageUrl } from "../../utils";
 
 
 export const About = () => {
-  const [userName, setUserName] = useState("");
-  const [rating, setRating] = useState("");
+  const [userName, setUserName] = useState("Fetching Data...");
+  const [rating, setRating] = useState("Fetching Data...");
 
   useEffect(() => {
     async function fetchUserRating() {
@@ -25,7 +25,7 @@ export const About = () => {
 
     fetchUserRating();
   }, []);
-  
+
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
