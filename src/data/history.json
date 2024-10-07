@@ -1,29 +1,19 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Co-Director",
+    "organisation": "IEEE",
+    "startDate": "Jan, 2024",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
+    "experiences": ["Organized CTF Event", "Organsized Blind Coding Event"],
+    "imageSrc": "history/ieee.png"
   },
   {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
-  },
-  {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
-    "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
-    ],
-    "imageSrc": "history/netflix.png"
+    "role": "Techical Team Member",
+    "organisation": "IET",
+    "startDate": "Jul, 2023",
+    "endDate": "Present",
+    "experiences": ["Orgainzed C++ Workshop", "Taugth C++ to Juniors"],
+    "imageSrc": "history/iet.png"
   }
+
 ]
