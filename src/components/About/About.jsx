@@ -25,6 +25,7 @@ export const About = () => {
 
     fetchUserRating();
   }, []);
+  
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>

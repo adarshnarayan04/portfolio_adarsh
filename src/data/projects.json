@@ -3,7 +3,7 @@
     "title": "Personal Portfolio",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the react .",
-    "skills": ["React", "JavaScript", "HTML", "CSS"], 
+    "skills": ["React", "JavaScript", "HTML", "CSS","API"], 
     "demo": "https://portfolio-adarsh-one.vercel.app/",
     "source": "https://github.com/adarshnarayan04/portfolio_adarsh"
   },

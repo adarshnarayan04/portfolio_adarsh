@@ -32,7 +32,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
-  list-style: none;
+  list-style: none;/*remove the bullet points*/
 }
 
 .skill {
