@@ -54,6 +54,8 @@
   width: 50%;
   z-index: 1;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 
   animation-name: floating;
   animation-duration: 3s;

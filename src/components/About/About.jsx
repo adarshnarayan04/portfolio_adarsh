@@ -1,9 +1,30 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
+
 export const About = () => {
+  const [userName, setUserName] = useState("");
+  const [rating, setRating] = useState("");
+
+  useEffect(() => {
+    async function fetchUserRating() {
+      try {
+        const response = await fetch(
+          `https://codeforces.com/api/user.rating?handle=the_magician_`
+        );
+        const data = await response.json();
+        const len = data.result.length;
+
+        setUserName(data.result[len - 1].handle);
+        setRating(data.result[len - 1].newRating);
+      } catch (error) {
+        console.error("Error fetching user rating:", error);
+      }
+    }
+
+    fetchUserRating();
+  }, []);
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
@@ -34,16 +55,17 @@ export const About = () => {
               </p>
             </div>
           </li>
-          {/* <li className={styles.aboutItem}>
+          <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>CodeForces Profile</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                UserName : {userName}
+                <br/>
+                UserRating : {rating}
               </p>
             </div>
-          </li> */}
+          </li>
         </ul>
       </div>
     </section>
